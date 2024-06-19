@@ -9,18 +9,6 @@ document.querySelector('#menu-btn').onclick = () =>{
    loginForm.classList.remove('active');
 };
 
-document.querySelector('#search-btn').onclick = () =>{
-   searchForm.classList.toggle('active');
-   navbar.classList.remove('active');
-   loginForm.classList.remove('active');
-};
-
-document.querySelector('#login-btn').onclick = () =>{
-   loginForm.classList.toggle('active');
-   navbar.classList.remove('active');
-   searchForm.classList.remove('active'); 
-};
-
 document.querySelector('#info-btn').onclick = () =>{
    contactInfo.classList.add('active');
 }
