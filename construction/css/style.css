@@ -399,8 +399,6 @@ section {
   left: 0;
   height: 100%;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(var(--white)), to(transparent));
-  background: linear-gradient(90deg, var(--white), transparent);
 }
 
 .home .slide .content {
@@ -963,3 +961,125 @@ section {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+#questionnaire {
+  display: flex;
+  flex-direction: column;
+}
+
+.question-step {
+  display: none;
+  text-align: center;
+}
+
+.question-step.active {
+  display: block;
+}
+
+.question {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.option-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.option-card:hover {
+  transform: scale(1.05);
+}
+
+.option-card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.option-card h4 {
+  margin-top: 15px;
+  font-size: 1.2em;
+}
+
+.progress-bar {
+  width: 80%;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  margin: 20px auto 0;
+  overflow: hidden;
+}
+
+.progress {
+  width: 0;
+  height: 10px;
+  background-color: #f5bf23;
+  transition: width 0.3s;
+}
+
+      /* Spezifisches Styling für den finalen Schritt */
+      #final-step .options {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #final-step .options label {
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+    #final-step .options input, #final-step .options textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    #final-step .options input[type="file"] {
+        padding: 3px;
+    }
+
+
+.btn {
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: var(--yellow);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  }
+
+#questionnaire {
+  display: none;
+}
+
+/* Add this to your CSS file (css/style.css) */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.projects .swiper-slide .box .image img {
+  width: 100%; /* Adjust width as needed */
+  height: auto;
+  max-width: 200px; /* Adjust max-width to make images smaller */
+}
