@@ -1080,6 +1080,6 @@ section {
 
 .projects .swiper-slide .box .image img {
   width: 100%; /* Adjust width as needed */
-  height: auto;
+  min-height: 350px;
   max-width: 200px; /* Adjust max-width to make images smaller */
 }
