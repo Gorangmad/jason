@@ -11,24 +11,21 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <header class="header fade-in">
-      <img src="./iamges/logo.png" alt="">
-      <nav class="navbar fade-in">
-        <a href="index.html">Home</a>
-        <a href="#stack">Services</a>
-        <a href="#focus-area">Focus Area</a>
-        <a href="#projects-section">Projects</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#footer">Contact</a>
-        <a href="return.html" class="quote-button">Konfigurator</a>
-        <a href="01797585329" class="call-now">Jetzt Anrufen 01797585329</a>
-      </nav>
-      <div class="hamburger fade-in" id="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </header>
+  <header class="header fade-in">
+    <img src="./iamges/logo.png" alt="">
+    <nav class="navbar fade-in" id="navbar">
+      <a href="index.html">Home</a>
+      <a href="#stack">Services</a>
+      <a href="#projects-section">Projekte</a>
+      <a href="return.html" class="quote-button">Konfigurator</a>
+      <a href="01797585329" class="call-now">Jetzt Anrufen 01797585329</a>
+    </nav>
+    <div class="hamburger fade-in" id="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </header>
 
     <section class="rechner">
       <div class="interactive-section">
@@ -227,14 +224,30 @@ document.addEventListener('DOMContentLoaded', function () {
         nextButton.disabled = false; // Enable the "Next" button
     };
 
-    const handleScroll = () => {
-        fadeElements.forEach(element => {
-            const rect = element.getBoundingClientRect();
-            if (rect.top < window.innerHeight && rect.bottom >= 0) {
-                element.classList.add('visible');
-            }
-        });
-    };
+    const navbar = document.getElementById('navbar');
+  const header = document.querySelector('.header');
+
+  const handleScroll = () => {
+    fadeElements.forEach(element => {
+      const rect = element.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom >= 0) {
+        element.classList.add('visible');
+      }
+    });
+  };
+
+  hamburger.addEventListener('click', () => {
+    header.classList.toggle('open');
+    navbar.classList.toggle('open');
+  });
+
+  // Optional: Close the navbar when a link is clicked
+  navbar.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      header.classList.remove('open');
+      navbar.classList.remove('open');
+    });
+  });
 
     const handleFormSubmit = (event) => {
         event.preventDefault(); // Prevent the form from actually submitting

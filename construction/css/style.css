@@ -86,17 +86,12 @@ body {
   color: var(--antracit);
 }
 
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
 .hamburger .bar {
   height: 3px;
-  width: 25px;
+  width: 30px;
   background-color: var(--antracit);
-  margin: 4px 0;
+  margin: 2px; /* Increase margin to give more space between bars */
+  transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
 }
 
 @media (max-width: 768px) {
@@ -104,15 +99,25 @@ body {
     display: none;
     flex-direction: column;
     background-color: var(--white);
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
+    right: -100%; /* Initially hide the navbar off the screen to the left */
+    height: 100vh; /* Take the full height of the screen */
+    width: 100%; /* Adjust width to cover the full screen */
+    transition: left 1s ease; /* Add a transition effect for smooth sliding */
+    z-index: 999; /* Ensure the navbar covers the hamburger */
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1001; /* Ensure hamburger is above the navbar */
+    position: relative; /* Position it for easy manipulation */
   }
 
   .navbar a {
     padding: 15px;
     text-align: center;
+    color: white;
   }
 
   .hamburger {
@@ -120,9 +125,23 @@ body {
   }
 
   .header.open .navbar {
+    right: 0; /* Slide the navbar in from the left */
     display: flex;
   }
+
+  .header.open .hamburger .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .header.open .hamburger .bar:nth-child(2) {
+    opacity: 0; /* Hide the middle bar */
+  }
+  
+  .header.open .hamburger .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(4.3px, -4.3px);
+  }
 }
+
 
 .home {
   position: relative;
@@ -286,7 +305,7 @@ body {
 }
 .circle-button1 a{
   text-decoration: none;
-  color: var(--black)w;
+  color: var(--black);
 }
 
 .circle-button1:hover {
@@ -906,6 +925,13 @@ body {
   flex-wrap: wrap;
 }
 
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 .footer-links ul {
   list-style: none;
   padding: 0;
@@ -950,6 +976,16 @@ body {
 
   .footer-center {
     flex: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-links {
+    flex: 1;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
   }
 
   .footer-bottom {
@@ -959,14 +995,33 @@ body {
 
 @media (max-width: 767px) {
   .footer-center {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
   }
 
   .footer-links {
-    margin-bottom: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .footer-links:first-child {
+    margin-right: 20px;
+  }
+
+  .footer-links ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-bottom {
+    margin-top: 20px;
   }
 }
+
 
 
 /* Centering contact-info */
