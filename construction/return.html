@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Responsive Construction Website Design Tutorial</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header class="header fade-in">
+      <img src="./iamges/logo.png" alt="">
+      <nav class="navbar fade-in">
+        <a href="index.html">Home</a>
+        <a href="#stack">Services</a>
+        <a href="#focus-area">Focus Area</a>
+        <a href="#projects-section">Projects</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#footer">Contact</a>
+        <a href="return.html" class="quote-button">Konfigurator</a>
+        <a href="01797585329" class="call-now">Jetzt Anrufen 01797585329</a>
+      </nav>
+      <div class="hamburger fade-in" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </header>
+
+    <section class="rechner">
+      <div class="interactive-section">
+
+         <div class="question-box" id="question-box">
+            <div class="questions question-step active" id="step1" data-step="1">
+               <h1>Wählen Sie die Art der Arbeit</h1>
+               <button class="option-card" data-next="step2" data-type="sanierung">Sanierung</button>
+               <button class="option-card" data-next="step3" data-type="reparatur">Reparatur</button>
+            </div>
+            <div class="questions question-step" id="step2" data-step="2">
+               <h1>Welcher Bereich soll bearbeitet werden?</h1>
+               <button class="option-card" data-next="step3">Bad</button>
+               <button class="option-card" data-next="step3">Zimmer</button>
+               <button class="option-card" data-next="step3">Balkon</button>
+               <button class="option-card" data-next="step3">Etwas anderes</button>
+            </div>
+            <div class="questions question-step" id="step4" data-step="3">
+               <h1>Ihr Budget</h1>
+               <input type="number" placeholder="Budget in €" id="budget-input">
+           </div>           
+            <div class="questions question-step" id="final-step" data-step="4">
+            </div>
+   
+            <div class="navigation-buttons">
+               <button class="back-button" id="back-button" style="display: none;">Back</button>
+               <button class="next-button" id="next-button" disabled>Next</button>
+             </div>
+         </div>
+     
+         <div class="contact-info" id="contact-info">
+          <h2>Weitere Informationen</h2>
+          <form id="contact-form">
+              <div class="form-group">
+                  <input type="text" name="first_name" placeholder="First name *" required>
+                  <input type="text" name="last_name" placeholder="Last name *" required>
+              </div>
+              <div class="form-group">
+                  <input type="email" name="email" placeholder="Email *" required>
+                  <input type="tel" name="phone" placeholder="Phone">
+              </div>
+              <div class="form-group">
+                  <input type="text" name="address" placeholder="Adresse *" required>
+              </div>
+              <div class="form-group">
+                  <input type="text" name="performance_location" placeholder="Leistungsort (falls abweichend)">
+              </div>
+              <div class="form-group">
+                  <textarea name="message" placeholder="Message"></textarea>
+              </div>
+              <div class="form-group">
+                  <label for="image-upload">Upload Images:</label>
+                  <input type="file" name="images" id="image-upload" accept="image/*" multiple>
+              </div>
+              <div class="form-group">
+                  <label for="video-upload">Upload Videos:</label>
+                  <input type="file" name="videos" id="video-upload" accept="video/*" multiple>
+              </div>
+              <div class="form-group">
+                  <input type="checkbox" id="privacy-check" required>
+                  <label for="privacy-check">Ich stimme der Datenschutzbestimmung zu</label>
+              </div>
+              <button type="submit" disabled id="submit-button">Submit</button>
+          </form>
+      
+          <button class="back-button" id="back-button-form" style="display: none;">Back</button>
+      
+          <div id="thank-you-message" style="display: none; text-align: center; margin-top: 20px; color: black;">
+              <h2>Vielen Dank für Ihr Interesse.</h2>
+              <p>Wir werden uns umgehend mit Ihnen in Verbindung setzen.</p>
+          </div>
+      </div>
+      
+
+          <div id="thank-you-message" style="display: none; text-align: center; margin-top: 20px; color: black;">
+            <h2>Vielen Dank für Ihr Interesse.</h2>
+            <p>Wir werden uns umgehend mit Ihnen in Verbindung setzen.</p>
+          </div>
+      </div>
+      
+   
+         <div class="progress-bar">
+           <div class="progress" id="progress"></div>
+         </div>
+
+      </div>
+  </section>
+  
+  <footer class="footer fade-in">
+    <div class="footer-content">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <img src="iamges/logo.png" alt="JG Haustechnik Logo">
+        </div>
+        <div class="footer-company">
+          <p><b>JG Haustechnik</b></p>
+        </div>
+      </div>
+      <div class="footer-center">
+        <div class="footer-links">
+          <ul>
+            <li><b>Sektionen</b></li>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Projekte</li>
+            <li>Konfigurator</li>
+            <li>Anrufen unter: 01797585329</li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <ul>
+           <li><b>Rechtlich</b></li>
+            <li>Datenschutz & Conditions</li>
+            <li>Impressum</li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><b>Social Media</b></li>
+            <li>Instagram</li>
+            <li>Tiktok</li>
+            <li>Facebook</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+ 
+
+  <script>
+
+document.addEventListener('DOMContentLoaded', function () {
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const steps = document.querySelectorAll('.question-step');
+    const nextButton = document.getElementById('next-button');
+    const backButton = document.getElementById('back-button');
+    const optionCards = document.querySelectorAll('.option-card');
+    const privacyCheck = document.getElementById('privacy-check');
+    const submitButton = document.getElementById('submit-button');
+    const contactInfo = document.getElementById('contact-info');
+    const contactForm = document.getElementById('contact-form');
+    const thankYouMessage = document.getElementById('thank-you-message');
+    let currentStep = 0;
+
+    const showStep = (index) => {
+    steps.forEach((step, i) => {
+        step.classList.toggle('active', i === index);
+    });
+    
+    // Hide the "Back" button in the contact information step
+    if (steps[index].id === 'final-step') {
+        backButton.style.display = 'none';
+    } else {
+        backButton.style.display = index === 0 ? 'none' : 'inline-block';
+    }
+    
+    nextButton.style.display = index === steps.length - 1 ? 'none' : 'inline-block';
+    submitButton.style.display = index === steps.length - 1 ? 'inline-block' : 'none';
+    
+    // Show contact section when all questions are answered
+    if (index === steps.length - 1) {
+        contactInfo.classList.add('active');
+    } else {
+        contactInfo.classList.remove('active');
+    }
+};
+
+    const handleNext = () => {
+        if (currentStep < steps.length - 1) {
+            currentStep++;
+            showStep(currentStep);
+        }
+    };
+
+    const handleBack = () => {
+        if (currentStep > 0) {
+            currentStep--;
+            showStep(currentStep);
+        }
+    };
+
+
+
+
+    const handleSelection = (event) => {
+        const selectedCard = event.target;
+
+        // Remove 'selected' class from all option cards in the current step
+        const currentStepCards = steps[currentStep].querySelectorAll('.option-card');
+        currentStepCards.forEach(card => {
+            card.classList.remove('selected');
+        });
+
+        // Add 'selected' class to the clicked option card
+        selectedCard.classList.add('selected');
+        nextButton.disabled = false; // Enable the "Next" button
+    };
+
+    const handleScroll = () => {
+        fadeElements.forEach(element => {
+            const rect = element.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                element.classList.add('visible');
+            }
+        });
+    };
+
+    const handleFormSubmit = (event) => {
+        event.preventDefault(); // Prevent the form from actually submitting
+        contactForm.style.display = 'none'; // Hide the form
+        thankYouMessage.style.display = 'block'; // Show the thank-you message
+    };
+
+    optionCards.forEach(card => {
+        card.addEventListener('click', handleSelection);
+    });
+
+    nextButton.addEventListener('click', handleNext);
+    backButton.addEventListener('click', handleBack);
+
+    privacyCheck.addEventListener('change', () => {
+        submitButton.disabled = !privacyCheck.checked;
+    });
+
+    contactForm.addEventListener('submit', handleFormSubmit);
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Run on load to fade in elements already in view
+
+    showStep(currentStep);
+});
+
+
+
+
+  </script>
+
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

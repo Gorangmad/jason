@@ -1,88 +1,52 @@
-let navbar = document.querySelector('.header .navbar');
-let searchForm = document.querySelector('.header .search-form');
-let loginForm = document.querySelector('.header .login-form');
-let contactInfo = document.querySelector('.contact-info');
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
-document.querySelector('#menu-btn').onclick = () =>{
-   navbar.classList.toggle('active');
-   searchForm.classList.remove('active');
-   loginForm.classList.remove('active');
-};
 
-document.querySelector('#info-btn').onclick = () =>{
-   contactInfo.classList.add('active');
-}
+document.addEventListener('DOMContentLoaded', () => {
+   const hamburger = document.getElementById('hamburger');
+   const navbar = document.getElementById('navbar');
 
-document.querySelector('#close-contact-info').onclick = () =>{
-   contactInfo.classList.remove('active');
-}
+   hamburger.addEventListener('click', () => {
+       navbar.classList.toggle('active');
+   });
 
-window.onscroll = () =>{
-   navbar.classList.remove('active');
-   searchForm.classList.remove('active');
-   loginForm.classList.remove('active');
-   contactInfo.classList.remove('active');
-}
+   const cards = document.querySelectorAll(".card");
 
-var swiper = new Swiper(".home-slider", {
-   loop:true,
-   grabCursor:true,
-   navigation: {
-     nextEl: ".swiper-button-next",
-     prevEl: ".swiper-button-prev",
-   },
+   cards.forEach((card) => {
+       const observer = new IntersectionObserver(
+           ([e]) => e.target.classList.toggle("stuck", e.intersectionRatio < 1),
+           { threshold: [1] }
+       );
+
+       observer.observe(card);
+   });
+
+   const columns = document.querySelectorAll('.project-column');
+
+  columns.forEach(column => {
+    // Duplicate the column's content for seamless looping
+    const clone = column.cloneNode(true);
+    column.parentNode.appendChild(clone);
+  });
+
+  function startScrolling() {
+    columns.forEach(column => {
+      const totalHeight = column.scrollHeight / 2;
+
+      function step() {
+        const currentScroll = column.scrollTop;
+        if (currentScroll >= totalHeight) {
+          column.scrollTop = 0;
+        } else {
+          column.scrollTop += 1;
+        }
+        requestAnimationFrame(step);
+      }
+
+      requestAnimationFrame(step);
+    });
+  }
+
+  startScrolling();
 });
 
-var swiper = new Swiper(".reviews-slider", {
-   loop:true,
-   grabCursor:true,
-   spaceBetween: 20,
-   breakpoints: {
-      640: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      991: {
-        slidesPerView: 3,
-      },
-   },
-});
 
-var swiper = new Swiper(".blogs-slider", {
-   loop:true,
-   grabCursor:true,
-   spaceBetween: 20,
-   breakpoints: {
-      640: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      991: {
-        slidesPerView: 3,
-      },
-   },
-});
-
-var swiper = new Swiper(".logo-slider", {
-   loop:true,
-   grabCursor:true,
-   spaceBetween: 20,
-   breakpoints: {
-      450: {
-         slidesPerView: 2,
-       },
-      640: {
-        slidesPerView: 3,
-      },
-      768: {
-        slidesPerView: 4,
-      },
-      1000: {
-        slidesPerView: 5,
-      },
-   },
-});

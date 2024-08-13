@@ -1,718 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Complete Responsive Construction Website Design Tutorial</title>
-
-   <!-- font awesome cdn link  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
-
-   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-
-   <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Responsive Construction Website Design Tutorial</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   
-<!-- header section starts  -->
-
-<header class="header">
-
-   <section class="flex">
-
-      <a href="#" class="logo">JG<span>Haustechnik</span></a>
-
-      <nav class="navbar">
-         <a href="#home">home</a>
-         <a href="#about">about</a>
-         <a href="#services">services</a>
-         <a href="#projects">projects</a>
-         <a href="#pricing">pricing</a>
-         <a href="#contact">contact</a>
+   <header class="header fade-in">
+      <img src="./iamges/logo.png" alt="">
+      <nav class="navbar fade-in">
+        <a href="index.html">Home</a>
+        <a href="#stack">Services</a>
+        <a href="#projects-section">Projekte</a>
+        <a href="return.html" class="quote-button">Konfigurator</a>
+        <a href="01797585329" class="call-now">Jetzt Anrufen 01797585329</a>
       </nav>
-   
-      <div class="icons">
-         <div id="menu-btn" class="fas fa-bars"></div>
-         <div id="info-btn" class="fas fa-info-circle"></div>
+      <div class="hamburger fade-in" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
-   
-      <form action="" class="search-form">
-         <input type="search" name="" placeholder="search here..." id="search-box">
-         <label for="search-box" class="fas fa-search"></label>
-      </form>
-   
-      <form action="" class="login-form">
-         <h3>login form</h3>
-         <input type="email" placeholder="enter your email" class="box">
-         <input type="password" placeholder="enter your password" class="box">
-         <div class="flex-btn">
-            <input type="checkbox" name="" id="remember-me">
-            <label for="remember-me">remember me</label>
-            <a href="#">forgot password?</a>
-         </div>
-         <input type="submit" value="login now" class="btn">
-         <p>don't have an account <a href="#">create one!</a></p>
-      </form>
+    </header>
 
-   </section>
+  <section class="home fade-in">
+    <div class="content fade-in">
+      <div class="overlay-text fade-in">
+        <span class="large-text fade-in">J</span>
+        <span class="large-text2 fade-in">G</span>
+      </div>
+      <p class="fade-in">Ihr Partner für Renovierungen und Sanierungen</p>
+    </div>
+  </section>
 
-</header>
+  <div id="stack">
+    <div class="card small fade-in video-card">
+        <div class="video-container1">
+            <video autoplay muted loop>
+                <source src="iamges/t.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="card-content fade-in">
+            <h2 class="fade-in">Unsere Fachgebiete</h2>
+            <p class="fade-in">Unsere Fachgebiete umfassen die Sanierung, Renovierung und Hausmeisterdienstleistungen. <br>
+                Wir bieten umfassende Sanierungs- und Renovierungsarbeiten, um Ihre Immobilie zu modernisieren und zu verschönern. <br>
+                Zusätzlich sorgen unsere zuverlässigen Hausmeisterdienste für die regelmäßige Wartung und Pflege, damit Ihr Objekt stets in bestem Zustand bleibt.
+            </p>
+        </div>
+        <div class="circle-button1 fade-in"><a href="expertise.html">Mehr erfahren</a></div> <!-- Circular button -->
+    </div>
 
-<div class="contact-info">
+    <div class="card small fade-in">
+        <div class="card-content fade-in">
+            <h2 class="fade-in">Renovierungen</h2>
+            <p class="fade-in">Unsere Renovierungsdienste bieten Ihnen die Möglichkeit, Ihr Zuhause nach Ihren individuellen Vorstellungen zu gestalten. Wir verwenden nur hochwertige Materialien und modernste Techniken, um sicherzustellen, dass jedes Detail perfekt ist. Ob es um die Erneuerung von Wänden, Böden, Decken oder die Installation neuer Einbauten geht, unser erfahrenes Team sorgt dafür, dass Ihre Vision Wirklichkeit wird.</p>
+        </div>
+        <img src="images/t.png" alt="Image 2" class="fade-in">
+    </div>
 
-   <div id="close-contact-info" class="fas fa-times"></div>
+    <div class="card small fade-in">
+        <div class="card-content fade-in">
+            <h2 class="fade-in">Sanierungen</h2>
+            <p class="fade-in">Unsere Sanierungsdienste sind darauf spezialisiert, Gebäude energetisch zu optimieren, Schäden zu beheben und moderne Standards zu erfüllen. Wir arbeiten effizient und umweltschonend, um sicherzustellen, dass Ihr Gebäude nicht nur schöner, sondern auch nachhaltiger wird. Dabei achten wir stets auf höchste Qualität und langfristige Haltbarkeit unserer Arbeit.</p>
+        </div>
+        <img src="iamges/Hausmeister.png" alt="Image 3" class="fade-in">
+    </div>
 
-   <div class="info">
-      <i class="fas fa-phone"></i>
-      <h3>phone number</h3>
-      <p>+123-456-7890</p>
-      <p>+111-222-3333</p>
-   </div>
-
-   <div class="info">
-      <i class="fas fa-envelope"></i>
-      <h3>email address</h3>
-      <p>test@gmail.com</p>
-      <p>test@gmail.com</p>
-   </div>
-
-   <div class="info">
-      <i class="fas fa-map-marker-alt"></i>
-      <h3>office address</h3>
-      <p>Frankfurt, Deutschland</p>
-   </div>
-
-   <div class="share">
-      <a href="#" class="fab fa-facebook-f"></a>
-      <a href="#" class="fab fa-twitter"></a>
-      <a href="#" class="fab fa-instagram"></a>
-      <a href="#" class="fab fa-linkedin"></a>
-   </div>
-
+    <div class="card small fade-in">
+        <div class="card-content fade-in">
+            <h2 class="fade-in">Hausmeister Dienstleistungen</h2>
+            <p class="fade-in">Unsere Hausmeisterdienste umfassen ein breites Spektrum an Aufgaben, von der Instandhaltung der Haustechnik über die Gartenpflege bis hin zur Reinigung und dem Winterdienst. Wir legen großen Wert auf Zuverlässigkeit und Sorgfalt, um sicherzustellen, dass Ihr Gebäude stets in einwandfreiem Zustand ist. Unser Team steht Ihnen jederzeit zur Verfügung, um schnelle und effektive Lösungen für alle anfallenden Aufgaben zu bieten.</p>
+        </div>
+        <img src="iamges/Sanierung.png" alt="Image 4" class="fade-in">
+    </div>
 </div>
 
-<!-- header section ends -->
 
-<!-- home section starts  -->
+  <section class="focus-area fade-in">
+    <div class="video-container fade-in">
+      <video autoplay muted loop playsinline>
+        <source src="images/about.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="text-container1 fade-in">
+      <h3></h3>
+      <h1>Renovieren und Sanieren <br> nach höchsten Standards!</h1>
+      <p>Unser Team von Experten steht Ihnen zur Verfügung, um Ihre Renovierungsprojekte nach den höchsten Qualitätsstandards umzusetzen. Wir legen großen Wert auf Präzision, Sorgfalt und die Verwendung hochwertiger Materialien, um sicherzustellen, dass jedes Detail perfekt ist. Egal ob es sich um eine Komplettsanierung oder kleinere Verbesserungen handelt, wir garantieren Ihnen Ergebnisse, die Ihre Erwartungen übertreffen. Vertrauen Sie auf unsere langjährige Erfahrung und unser Engagement für herausragende Handwerkskunst.</p>
+      <div class="circle-button fade-in">DISCOVER SOLUTIONS</div>
+    </div>
+  </section>
 
-<section class="home fade-in-section" id="home">
-
-
-   <div class="swiper home-slider">
-
-      <div class="swiper-wrapper">
-
-         <section class="swiper-slide slide" style="background: url(images/home-slide-1.jpg) no-repeat;">
-            <div class="content">
-            </div>
-         </section>
-
-         <section class="swiper-slide slide" style="background: url(images/home-slide-2.jpg) no-repeat;">
-
-         </section>
-
-         <section class="swiper-slide slide" style="background: url(images/home-slide-3.jpg) no-repeat;">
-            <div class="content">
-               <h3>from concept to creation</h3>
-               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur beatae iusto pariatur laborum magnam eos!</p>
-               <a href="#about" class="btn">get started</a>
-            </div>
-         </section>
-
-      </div>
-
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-
-   </div>
-
-</section>
-
-<!-- home section ends -->
-
-<!-- about section starts  -->
-
-<section class="about fade-in-section" id="about">
-
-
-   <h1 class="heading"> Über uns </h1>
-
-   <div class="row">
-
-      <div class="video">
-         <video src="images/about.mp4" loop muted autoplay></video>
-      </div>
-
-      <div class="content">
-         <h3>Renovierungen nach höchsten Standards!</h3>
-         <p>Unser Team von Experten steht Ihnen zur Verfügung, um Ihre Renovierungsprojekte nach den höchsten Qualitätsstandards umzusetzen. Wir legen großen Wert auf Präzision, Sorgfalt und die Verwendung hochwertiger Materialien, um sicherzustellen, dass jedes Detail perfekt ist. Egal ob es sich um eine Komplettsanierung oder kleinere Verbesserungen handelt, wir garantieren Ihnen Ergebnisse, die Ihre Erwartungen übertreffen. Vertrauen Sie auf unsere langjährige Erfahrung und unser Engagement für herausragende Handwerkskunst.</p>
-         <a href="#services" class="btn">Mehr erfahren</a>
-      </div>
-      
-
-   </div>
-
-   <div class="box-container">
-
-      <div class="box">
-         <h3>50+</h3>
-         <p>Städte</p>
-      </div>
-
-      <div class="box">
-         <h3>300+</h3>
-         <p>Projekte</p>
-      </div>
-
-      <div class="box">
-         <h3>200+</h3>
-         <p>Zufriedene Kunden</p>
-      </div>
-
-      <div class="box">
-         <h3>15+</h3>
-         <p>Aktive Mitarbeiter</p>
-      </div>
-
-   </div>
-
-</section>
-
-<!-- about section ends -->
-
-<!-- services section starts  -->
-
-<section class="services-container fade-in-section">
-
-   <section class="services" id="services">
-
-      <h1 class="heading"> Dienstleistungen </h1>
-   
-      <div class="box-container">
-   
-         <div class="box">
-            <img src="images/service-1.png" alt="">
-            <h3>Heizung- und Sanitärarbeiten</h3>
+  <section class="services fade-in">
+    <h1 class="fade-in">Dienstleistungen</h1>
+    
+    <div class="service-card fade-in">
+      <img src="images/service-2.png" alt="">
+      <div class="service-title fade-in">
+            <h2>Heizung- und Sanitärarbeiten</h2>
+        </div>
+        <div class="service-description fade-in">
             <p>Wir bieten professionelle Heizungs- und Sanitärarbeiten, um Ihr Zuhause komfortabler und effizienter zu gestalten. Unsere Experten sind bestens geschult, um alle Ihre Bedürfnisse zu erfüllen.</p>
-         </div>
-   
-         <div class="box">
-            <img src="images/service-2.png" alt="">
-            <h3>Fließenarbeiten</h3>
+        </div>
+    </div>
+    
+    <div class="service-card fade-in">
+        <img src="images/service-3.png" alt="">
+        <div class="service-title fade-in">
+            <h2>Fließenarbeiten</h2>
+        </div>
+        <div class="service-description fade-in">
             <p>Unsere Fliesenleger sorgen für perfekte Ergebnisse in Badezimmern, Küchen und anderen Bereichen Ihres Hauses. Hochwertige Materialien und präzise Arbeit sind unser Standard.</p>
-         </div>
-   
-         <div class="box">
-            <img src="images/service-3.png" alt="">
-            <h3>Komplettbadsanierung</h3>
+        </div>
+    </div>
+    
+    <div class="service-card fade-in">
+      <img src="images/service-8.png" alt="">
+      <div class="service-title fade-in">
+            <h2>Komplettbadsanierung</h2>
+        </div>
+        <div class="service-description fade-in">
             <p>Wir übernehmen die vollständige Renovierung Ihres Badezimmers, von der Planung bis zur Fertigstellung. Moderne Designs und erstklassige Handwerkskunst garantieren ein beeindruckendes Ergebnis.</p>
-         </div>
-   
-         <div class="box">
-            <img src="images/service-4.png" alt="">
-            <h3>Entrümpelung</h3>
+        </div>
+    </div>
+    
+    <div class="service-card fade-in">
+      <img src="images/service-4.png" alt="">
+      <div class="service-title fade-in">
+            <h2>Entrümpelung</h2>
+        </div>
+        <div class="service-description fade-in">
             <p>Unser Entrümpelungsservice hilft Ihnen, Platz zu schaffen und Unordnung zu beseitigen. Schnell, effizient und umweltfreundlich – wir kümmern uns um alles.</p>
-         </div>
-   
-         <div class="box">
-            <img src="images/service-5.png" alt="">
-            <h3>Kleinreparaturen</h3>
+        </div>
+    </div>
+    
+    <div class="service-card fade-in">
+      <img src="images/service-7.png" alt="">
+      <div class="service-title fade-in">
+            <h2>Kleinreparaturen</h2>
+        </div>
+        <div class="service-description fade-in">
             <p>Von kleinen Reparaturen bis hin zu Wartungsarbeiten bieten wir schnelle und zuverlässige Lösungen für Ihr Zuhause. Kein Job ist zu klein für uns.</p>
-         </div>
-   
-         <div class="box">
-            <img src="images/service-6.png" alt="">
-            <h3>Interior Design</h3>
-            <p>Unser Interior Design Service hilft Ihnen, ein stilvolles und funktionales Zuhause zu schaffen. Von der Konzeptentwicklung bis zur Umsetzung – wir gestalten Ihre Räume nach Ihren Wünschen.</p>
-         </div>
-   
-         <div class="box">
-            <img src="images/service-7.png" alt="">
-            <h3>Innenausbau</h3>
-            <p>Wir bieten umfassende Innenausbau-Dienstleistungen, um Ihre Wohn- und Arbeitsräume zu verbessern. Unsere erfahrenen Handwerker liefern hochwertige Arbeiten für jedes Projekt.</p>
-         </div>
-   
-         <div class="box">
-            <img src="images/service-8.png" alt="">
-            <h3>Komplettbadsanierung</h3>
-            <p>Unsere Komplettbadsanierungen umfassen alles, von neuen Armaturen bis hin zu luxuriösen Fliesen. Wir verwandeln Ihr altes Bad in eine moderne Wellness-Oase.</p>
-         </div>
-         
-      </div>
-   
-   </section> 
+        </div>
+    </div>
 </section>
 
 
-</div>
-
-<!-- services section ends -->
-
-<!-- projects section starts  -->
-<div class="projects-container fade-in-section">
-
-   <section class="projects" id="projects">
-
-      <h1 class="heading"> Unsere Projekte </h1>
-
-      <div class="swiper projects-slider">
-         <div class="swiper-wrapper">
-            <div class="swiper-slide">
-               <a href="iamges/23.jpg" class="box">
-                  <div class="image">
-                     <img src="iamges/23.jpg" alt="">
-                  </div>
-                  <div class="content">
-                  </div>
-               </a>
-            </div>
-
-            <div class="swiper-slide">
-               <a href="iamges/20.jpg" class="box">
-                  <div class="image">
-                     <img src="iamges/20.jpg" alt="">
-                  </div>
-                  <div class="content">
-                  </div>
-               </a>
-            </div>
-
-            <div class="swiper-slide">
-               <a href="iamges/7.jpg" class="box">
-                  <div class="image">
-                     <img src="iamges/7.jpg" alt="">
-                  </div>
-                  <div class="content">
-                  </div>
-               </a>
-            </div>
-
-            <div class="swiper-slide">
-               <a href="iamges/1.jpg" class="box">
-                  <div class="image">
-                     <img src="iamges/1.jpg" alt="">
-                  </div>
-                  <div class="content">
-                  </div>
-               </a>
-            </div>
-
-            <div class="swiper-slide">
-               <a href="iamges/10.jpg" class="box">
-                  <div class="image">
-                     <img src="iamges/10.jpg" alt="">
-                  </div>
-                  <div class="content">
-                  </div>
-               </a>
-            </div>
-
-            <div class="swiper-slide">
-               <a href="iamges/22.jpg" class="box">
-                  <div class="image">
-                     <img src="iamges/22.jpg" alt="">
-                  </div>
-                  <div class="content">
-                  </div>
-               </a>
-            </div>
-         </div>
-
+  <section class="projects-section fade-in" id="projects-section">
+    <h1 >Renovierungen</h1>
+    <div class="projects-carousel">
+      <div class="project-column">
+        <div class="slide-track">
+          <div class="project-card" style="background-image: url('iamges/1.jpg');"></div>
+          <div class="project-card" style="background-image: url('iamges/5.jpg');"></div>
+          <div class="project-card" style="background-image: url('iamges/3.jpg');"></div>
+          <div class="project-card" style="background-image: url('iamges/1.jpg');"></div>
+          <div class="project-card" style="background-image: url('iamges/5.jpg');"></div>
+          <div class="project-card" style="background-image: url('iamges/3.jpg');"></div>
+          <div class="project-card" style="background-image: url('iamges/1.jpg');"></div>
+          <div class="project-card" style="background-image: url('iamges/5.jpg');"></div>
+          <div class="project-card" style="background-image: url('iamges/3.jpg');"></div>
+        </div>
       </div>
-   </section>
-</div>
-
-<!-- reviews section starts  -->
-
-<section class="reviews fade-in-section">
-
-   <h1 class="heading"> clients reviews </h1>
-
-   <div class="swiper reviews-slider">
-
-      <div class="swiper-wrapper">
-
-         <div class="swiper-slide slide">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis unde suscipit quis consequuntur, tempora corporis ex molestias dignissimos in cumque sunt ducimus voluptate inventore harum earum rem aperiam vel modi?</p>
-            <div class="user">
-               <img src="images/pic-1.png" alt="">
-               <div class="info">
-                  <h3>john deo</h3>
-                  <div class="stars">
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-         <div class="swiper-slide slide">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis unde suscipit quis consequuntur, tempora corporis ex molestias dignissimos in cumque sunt ducimus voluptate inventore harum earum rem aperiam vel modi?</p>
-            <div class="user">
-               <img src="images/pic-2.png" alt="">
-               <div class="info">
-                  <h3>john deo</h3>
-                  <div class="stars">
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-         <div class="swiper-slide slide">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis unde suscipit quis consequuntur, tempora corporis ex molestias dignissimos in cumque sunt ducimus voluptate inventore harum earum rem aperiam vel modi?</p>
-            <div class="user">
-               <img src="images/pic-3.png" alt="">
-               <div class="info">
-                  <h3>john deo</h3>
-                  <div class="stars">
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-         <div class="swiper-slide slide">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis unde suscipit quis consequuntur, tempora corporis ex molestias dignissimos in cumque sunt ducimus voluptate inventore harum earum rem aperiam vel modi?</p>
-            <div class="user">
-               <img src="images/pic-4.png" alt="">
-               <div class="info">
-                  <h3>john deo</h3>
-                  <div class="stars">
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-         <div class="swiper-slide slide">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis unde suscipit quis consequuntur, tempora corporis ex molestias dignissimos in cumque sunt ducimus voluptate inventore harum earum rem aperiam vel modi?</p>
-            <div class="user">
-               <img src="images/pic-5.png" alt="">
-               <div class="info">
-                  <h3>john deo</h3>
-                  <div class="stars">
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-         <div class="swiper-slide slide">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis unde suscipit quis consequuntur, tempora corporis ex molestias dignissimos in cumque sunt ducimus voluptate inventore harum earum rem aperiam vel modi?</p>
-            <div class="user">
-               <img src="images/pic-6.png" alt="">
-               <div class="info">
-                  <h3>john deo</h3>
-                  <div class="stars">
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                  </div>
-               </div>
-            </div>
-         </div>
-
+      <div class="project-column middle-column">
+        <div class="slide-track reverse-scroll ">
+          <div class="project-card" style="background-image: url('iamges/10.jpg');"></div>
+          <div class="project-card" style="background-image: url('iamges/12.jpg');"></div>
+          <div class="project-card" style="background-image: url('iamges/10.jpg');"></div>
+          <div class="project-card" style="background-image: url('iamges/12.jpg');"></div>
+          <div class="project-card" style="background-image: url('iamges/10.jpg');"></div>
+          <div class="project-card" style="background-image: url('iamges/12.jpg');"></div>
+          <div class="project-card" style="background-image: url('iamges/10.jpg');"></div>
+          <div class="project-card" style="background-image: url('iamges/12.jpg');"></div>
+        </div>
       </div>
+      <div class="project-column">
+        <div class="slide-track">
+          <div class="project-card" style="background-image: url('iamges/16.jpg');"></div>
+          <div class="project-card" style="background-image: url('iamges/19.jpg');"></div>
+          <div class="project-card" style="background-image: url('iamges/16.jpg');"></div>
+          <div class="project-card" style="background-image: url('iamges/19.jpg');"></div>
+          <div class="project-card" style="background-image: url('iamges/16.jpg');"></div>
+          <div class="project-card" style="background-image: url('iamges/19.jpg');"></div>
+          <div class="project-card" style="background-image: url('iamges/16.jpg');"></div>
+          <div class="project-card" style="background-image: url('iamges/19.jpg');"></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section class="projects-section fade-in">
+    <h1 class="fade-in">Sanierungen</h1>
+    <div class="projects-carousel fade-in">
+      <div class="project-column fade-in">
+        <div class="slide-track fade-in">
+          <div class="project-card" style="background-image: url('iamges/1.jpg');"></div>
+          <div class="project-card" style="background-image: url('iamges/5.jpg');"></div>
+          <div class="project-card" style="background-image: url('iamges/3.jpg');"></div>
+          <div class="project-card" style="background-image: url('iamges/1.jpg');"></div>
+          <div class="project-card" style="background-image: url('iamges/5.jpg');"></div>
+          <div class="project-card" style="background-image: url('iamges/3.jpg');"></div>
+          <div class="project-card" style="background-image: url('iamges/1.jpg');"></div>
+          <div class="project-card" style="background-image: url('iamges/5.jpg');"></div>
+          <div class="project-card" style="background-image: url('iamges/3.jpg');"></div>
+        </div>
+      </div>
+      <div class="project-column fade-in middle-column">
+        <div class="slide-track reverse-scroll fade-in">
+          <div class="project-card fade-in" style="background-image: url('iamges/10.jpg');"></div>
+          <div class="project-card fade-in" style="background-image: url('iamges/12.jpg');"></div>
+          <div class="project-card fade-in" style="background-image: url('iamges/10.jpg');"></div>
+          <div class="project-card fade-in" style="background-image: url('iamges/12.jpg');"></div>
+          <div class="project-card fade-in" style="background-image: url('iamges/10.jpg');"></div>
+          <div class="project-card fade-in" style="background-image: url('iamges/12.jpg');"></div>
+          <div class="project-card fade-in" style="background-image: url('iamges/10.jpg');"></div>
+          <div class="project-card fade-in" style="background-image: url('iamges/12.jpg');"></div>
+        </div>
+      </div>
+      <div class="project-column fade-in">
+        <div class="slide-track fade-in">
+          <div class="project-card fade-in" style="background-image: url('iamges/16.jpg');"></div>
+          <div class="project-card fade-in" style="background-image: url('iamges/19.jpg');"></div>
+          <div class="project-card fade-in" style="background-image: url('iamges/16.jpg');"></div>
+          <div class="project-card fade-in" style="background-image: url('iamges/19.jpg');"></div>
+          <div class="project-card fade-in" style="background-image: url('iamges/16.jpg');"></div>
+          <div class="project-card fade-in" style="background-image: url('iamges/19.jpg');"></div>
+          <div class="project-card fade-in" style="background-image: url('iamges/16.jpg');"></div>
+          <div class="project-card fade-in" style="background-image: url('iamges/19.jpg');"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials fade-in">
+    <h3 class="fade-in">Satisfied Customers</h3>
+    <h1 class="fade-in">See What Our Clients Say About Us</h1>
+    <div class="testimonial-cards fade-in">
+      <div class="card fade-in">
+        <p class="fade-in">Use this space to share a testimonial quote about the business, its products or its services. Insert a quote from a real customer or client here to build trust and win over site visitors.</p>
+        <p class="client-name fade-in">The Mathews</p>
+        <p class="stars fade-in">★★★★★</p>
+      </div>
+      <div class="card fade-in">
+        <p class="fade-in">Use this space to share a testimonial quote about the business, its products or its services. Insert a quote from a real customer or client here to build trust and win over site visitors.</p>
+        <p class="client-name fade-in">Archathon</p>
+        <p class="stars fade-in">★★★★★</p>
+      </div>
+      <div class="card fade-in">
+        <p class="fade-in">Use this space to share a testimonial quote about the business, its products or its services. Insert a quote from a real customer or client here to build trust and win over site visitors.</p>
+        <p class="client-name fade-in">Chris Parks & Associates</p>
+        <p class="stars fade-in">★★★★★</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer fade-in">
+   <div class="footer-content">
+     <div class="footer-left">
+       <div class="footer-logo">
+         <img src="iamges/logo.png" alt="JG Haustechnik Logo">
+       </div>
+       <div class="footer-company">
+         <p><b>JG Haustechnik</b></p>
+       </div>
+     </div>
+     <div class="footer-center">
+       <div class="footer-links">
+         <ul>
+           <li><b>Sektionen</b></li>
+           <li>Home</li>
+           <li>Services</li>
+           <li>Projekte</li>
+           <li>Konfigurator</li>
+           <li>Anrufen unter: 01797585329</li>
+         </ul>
+       </div>
+       <div class="footer-links">
+         <ul>
+          <li><b>Rechtlich</b></li>
+           <li>Datenschutz & Conditions</li>
+           <li>Impressum</li>
+         </ul>
+       </div>
+       <div class="footer-links">
+         <ul>
+           <li><b>Social Media</b></li>
+           <li>Instagram</li>
+           <li>Tiktok</li>
+           <li>Facebook</li>
+         </ul>
+       </div>
+     </div>
    </div>
+ </footer>
+ 
 
-</section>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const fadeElements = document.querySelectorAll('.fade-in');
 
-<!-- reviews section ends -->
-
-<div class="pricing-container fade-in-section">
-   <section class="pricing" id="pricing">
-      <h1 class="heading">JG Haustechnik</h1>
-      <button class="btn" id="start-configurator">Ihr Renovierungskonfigurator</button>
-      <div id="questionnaire" style="display: none;">
-         <div class="question-step active" data-step="1">
-            <h3 class="question">Wählen Sie die Art der Arbeit</h3>
-            <div class="options">
-               <div class="option-card" data-next="step2">
-                  <h4>Sanierung</h4>
-               </div>
-               <div class="option-card" data-next="step2">
-                  <h4>Reparatur</h4>
-               </div>
-            </div>
-            <div class="progress-bar">
-               <div class="progress"></div>
-            </div>
-         </div>
-         <div class="question-step" id="step2" data-step="2">
-            <h3 class="question">Welcher Bereich soll bearbeitet werden?</h3>
-            <div class="options">
-               <div class="option-card" data-next="step3">
-                  <h4>Bad</h4>
-               </div>
-               <div class="option-card" data-next="step3">
-                  <h4>Zimmer</h4>
-               </div>
-               <div class="option-card" data-next="step3">
-                  <h4>Balkon</h4>
-               </div>
-               <div class="option-card" data-next="step3">
-                  <h4>Etwas anderes</h4>
-               </div>
-            </div>
-            <div class="progress-bar">
-               <div class="progress"></div>
-            </div>
-         </div>
-         <div class="question-step" id="step3" data-step="3">
-            <h3 class="question">Welche Ausstattung soll vorhanden sein</h3>
-            <div class="options">
-               <div class="option-card" data-next="step4">
-                  <h4>Standard</h4>
-               </div>
-               <div class="option-card" data-next="step4">
-                  <h4>höhere Qualität</h4>
-               </div>
-               <div class="option-card" data-next="step4">
-                  <h4>Luxus</h4>
-               </div>
-            </div>
-            <div class="progress-bar">
-               <div class="progress"></div>
-            </div>
-         </div>
-         <div class="question-step" id="step4" data-step="4">
-            <h3 class="question">Ihr Budget</h3>
-            <div class="options">
-               <div class="option-card" data-next="final-step">
-                  <h4>&lt; 5000</h4>
-               </div>
-               <div class="option-card" data-next="final-step">
-                  <h4>&gt; 5000</h4>
-               </div>
-               <div class="option-card" data-next="final-step">
-                  <h4>Noch nicht festgelegt</h4>
-               </div>
-            </div>
-            <div class="progress-bar">
-               <div class="progress"></div>
-            </div>
-         </div>
-         <div class="question-step" id="final-step" data-step="5">
-            <h3 class="question">Überprüfen Sie Ihre Auswahl und senden Sie Ihre Anfrage</h3>
-            <div class="options">
-               <h2 for="upload-files">Bilder oder Videos hochladen</h2>
-               <input type="file" id="upload-files" multiple>
-               <h2 for="comments">Kommentare</h2>
-               <textarea id="comments" placeholder="Fügen Sie hier Ihre Kommentare ein"></textarea>
-               <h2 for="name">Name</h2>
-               <input type="text" id="name" placeholder="Ihr Name" required>
-               <h2 for="email">E-Mail Adresse</h2>
-               <input type="email" id="email" placeholder="Ihre E-Mail Adresse" required>
-               <h2 for="phone">Telefonnummer</h2>
-               <input type="tel" id="phone" placeholder="Ihre Telefonnummer" required>
-               <h2 for="start-date">Beginn der Arbeiten</h2>
-               <input type="date" id="start-date" required>
-            </div>
-            <button class="btn" id="submit-btn">Anfrage senden</button>
-            <div class="progress-bar">
-               <div class="progress"></div>
-            </div>
-         </div>
-      </div>
-   </section>
-</div>
-
-
-
-
-
-
-<!-- pricing section ends -->
-
-<!-- contact section starts  -->
-
-
-<div class="contact-container fade-in-section">
-
-   <section class="contact" id="contact">
-
-      <h1 class="heading"> contact us </h1>
-   
-      <div class="row">
-   
-         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.877219988925!2d8.662301877189027!3d50.10730507152884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd0bffdba62d97%3A0x656e49a61f209b80!2sAm%20Hauptbahnhof%2C%2060329%20Innenstadt%20I!5e0!3m2!1sde!2sde!4v1718731239219!5m2!1sde!2sde" allowfullscreen="" loading="lazy"></iframe>
-   
-         <form action="">
-            <h3>get in touch</h3>
-            <input type="text" placeholder="name" class="box">
-            <input type="email" placeholder="email" class="box">
-            <input type="number" placeholder="phone" class="box">
-            <textarea name="" placeholder="message" class="box" id="" cols="30" rows="10"></textarea>
-            <input type="submit" value="send message" class="btn">
-         </form>
-   
-      </div>
-   
-   </section>
-
-</div>
-
-<!-- contact section ends -->
-
-
-<!-- client logo section starts -->
-
-<section class="logo-container">
-   <div class="swiper logo-slider">
-      <div class="swiper-wrapper">
-         <div class="swiper-slide slide"><img src="images/client-logo-1.png" alt=""></div>
-         <div class="swiper-slide slide"><img src="images/client-logo-2.png" alt=""></div>
-         <div class="swiper-slide slide"><img src="images/client-logo-3.png" alt=""></div>
-         <div class="swiper-slide slide"><img src="images/client-logo-4.png" alt=""></div>
-         <div class="swiper-slide slide"><img src="images/client-logo-5.png" alt=""></div>
-         <div class="swiper-slide slide"><img src="images/client-logo-6.png" alt=""></div>
-      </div>
-   </div>
-</section>
-
-<!-- client logo section ends -->
-
-<!-- footer section starts  -->
-
-<footer class="footer">
-
-   <div class="links">
-      <a class="btn" href="#home">home</a>
-      <a class="btn" href="#about">about</a>
-      <a class="btn" href="#services">services</a>
-      <a class="btn" href="#projects">projects</a>
-      <a class="btn" href="#pricing">pricing</a>
-      <a class="btn" href="#contact">contact</a>
-      <a class="btn" href="#blogs">blogs</a>
-   </div>
-
-   <div class="credit"> created by <span>WeDo</span> | all rights reserved! </div>
-
-</footer>
-
-<!-- footer section ends -->
-
-
-
-
-
-
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
-
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
-
-
-<script>
-
-   document.getElementById('start-configurator').addEventListener('click', function() {
-      document.getElementById('start-configurator').style.display = 'none';
-      document.getElementById('questionnaire').style.display = 'block';
-   });
-
-   lightGallery(document.querySelector('.projects .box-container'));
-
-
-   document.addEventListener('DOMContentLoaded', () => {
-      const options = {
-         root: null,
-         rootMargin: '0px',
-         threshold: 0.1
+      const handleScroll = () => {
+        fadeElements.forEach(element => {
+          const rect = element.getBoundingClientRect();
+          if (rect.top < window.innerHeight && rect.bottom >= 0) {
+            element.classList.add('visible');
+          }
+        });
       };
 
-      const handleIntersect = (entries, observer) => {
-         entries.forEach(entry => {
-            if (entry.isIntersecting) {
-               entry.target.classList.add('is-visible');
-               observer.unobserve(entry.target);
-            }
-         });
-      };
+      window.addEventListener('scroll', handleScroll);
+      handleScroll(); // Run on load to fade in elements already in view
+    });
+  </script>
 
-      const observer = new IntersectionObserver(handleIntersect, options);
-      document.querySelectorAll('.fade-in-section').forEach(section => {
-         observer.observe(section);
-      });
-
-      const optionCards = document.querySelectorAll('.option-card');
-      const steps = document.querySelectorAll('.question-step');
-      const totalSteps = steps.length;
-
-      optionCards.forEach(card => {
-         card.addEventListener('click', () => {
-            const nextStepId = card.getAttribute('data-next');
-            steps.forEach(step => {
-               step.classList.remove('active');
-            });
-            const nextStep = document.getElementById(nextStepId);
-            nextStep.classList.add('active');
-            updateProgressBar(nextStep.dataset.step);
-         });
-      });
-
-      const swiperProjects = new Swiper('.projects-slider', {
-         loop: true,
-         autoplay: {
-            delay: 0, // Continuous scrolling without delay
-            disableOnInteraction: false,
-         },
-         speed: 3000, // Adjust speed for smooth continuous scrolling
-         slidesPerView: 3, // Allow dynamic number of slides
-         spaceBetween: 30, // Space between slides in pixels
-         loopAdditionalSlides: 1, // Additional slides to loop for seamless effect
-         centeredSlides: true, // Centered slides for a smooth effect
-      });
-
-      document.getElementById('submit-btn').addEventListener('click', () => {
-         alert('Your inquiry has been sent!');
-         // You can add your form submission logic here
-      });
-
-      function updateProgressBar(stepNumber) {
-         const progressPercent = (stepNumber / totalSteps) * 100;
-         document.querySelectorAll('.progress').forEach(progress => {
-            progress.style.width = progressPercent + '%';
-         });
-      }
-
-      // Initialize progress bar for the first step
-      updateProgressBar(1);
-   });
-
-</script>
-
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>

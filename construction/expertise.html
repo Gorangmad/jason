@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Responsive Construction Website Design</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header class="header fade-in">
+      <a href="index.html"><img src="iamges/logo.png" alt="Logo"></a>
+      <nav class="navbar fade-in">
+        <a href="index.html">Home</a>
+        <a href="#stack">Services</a>
+        <a href="#focus-area">Focus Area</a>
+        <a href="#projects-section">Projects</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#footer">Contact</a>
+        <a href="return.html" class="quote-button">Konfigurator</a>
+        <a href="tel:01797585329" class="call-now">Jetzt Anrufen 01797585329</a>
+      </nav>
+      <div class="hamburger fade-in" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </header>
+
+    <section class="projects fade-in">
+        <div class="header-content fade-in">
+            <div class="text-container">
+                <h1>Expertise & Projekte</h1>
+                <div class="text-content">
+                    <p>Wir bringen unseren innovativen Ansatz in jedes Projekt ein und beweisen, dass nichts unmöglich ist. Nutzen Sie diesen Raum, um das Unternehmen, seine Produkte oder Dienstleistungen zu bewerben. Helfen Sie den Menschen, sich mit dem Unternehmen und seinen Angeboten vertraut zu machen und so eine Verbindung und Vertrauen aufzubauen. Konzentrieren Sie sich darauf, was das Unternehmen einzigartig macht und wie Nutzer davon profitieren können.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="project-cards-container">
+            <div class="project-card">
+                <img src="iamges/Bad.jpg" alt="Badsanierung">
+                <div class="project-info">
+                    <span class="project-number">01</span>
+                    <h3>Badsanierung</h3>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/sanitaer.jpg" alt="Sanitärarbeiten">
+                <div class="project-info">
+                    <span class="project-number">02</span>
+                    <h3>Sanitärarbeiten</h3>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/sanierung.jpg" alt="Zimmersanierung">
+                <div class="project-info">
+                    <span class="project-number">03</span>
+                    <h3>Zimmersanierung</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <footer class="footer fade-in">
+        <div class="footer-content">
+          <div class="footer-left">
+            <div class="footer-logo">
+              <img src="iamges/logo.png" alt="JG Haustechnik Logo">
+            </div>
+            <div class="footer-company">
+              <p><b>JG Haustechnik</b></p>
+            </div>
+          </div>
+          <div class="footer-center">
+            <div class="footer-links">
+              <ul>
+                <li><b>Sektionen</b></li>
+                <li>Home</li>
+                <li>Services</li>
+                <li>Projekte</li>
+                <li>Konfigurator</li>
+                <li>Anrufen unter: 01797585329</li>
+              </ul>
+            </div>
+            <div class="footer-links">
+              <ul>
+               <li><b>Rechtlich</b></li>
+                <li>Datenschutz & Conditions</li>
+                <li>Impressum</li>
+              </ul>
+            </div>
+            <div class="footer-links">
+              <ul>
+                <li><b>Social Media</b></li>
+                <li>Instagram</li>
+                <li>Tiktok</li>
+                <li>Facebook</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const fadeElements = document.querySelectorAll('.fade-in');
+
+            const handleScroll = () => {
+                fadeElements.forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                        element.classList.add('visible');
+                    }
+                });
+            };
+
+            window.addEventListener('scroll', handleScroll);
+            handleScroll(); // Run on load to fade in elements already in view
+        });
+    </script>
+    
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
