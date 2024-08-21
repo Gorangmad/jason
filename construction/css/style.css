@@ -289,20 +289,56 @@ body {
   position: absolute;
   top: 20px;
   right: 20px;
-  width: 90px;
-  height: 90px;
+  width: 70px; /* Reduced the size */
+  height: 70px; /* Reduced the size */
   background-color: var(--primary-button-bg);
   color: var(--primary-button-text);
   border-radius: 50%;
   text-align: center;
   line-height: 38px;
-  font-size: 0.9em;
+  font-size: 0.8em; /* Reduced the font size */
   font-weight: bold;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: background-color 0.3s ease;
   z-index: 1; /* Ensure button is above content */
 }
+
+.circle-button1 a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.circle-button1:hover {
+  background-color: var(--primary-button-bg);
+  opacity: 0.8;
+}
+
+@media (max-width: 1024px) {
+  .circle-button1 {
+    width: 60px; /* Further reduce size for smaller screens */
+    height: 60px;
+    line-height: 18px;
+    font-size: 0.7em; /* Adjust font size */
+  }
+}
+
+@media (max-width: 768px) {
+  .circle-button1 {
+    width: 50px; /* Further reduce size for smaller screens */
+    height: 50px;
+    font-size: 0.6em; /* Adjust font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .circle-button1 {
+    width: 40px; /* Further reduce size for the smallest screens */
+    height: 40px;
+    font-size: 0.5em; /* Adjust font size */
+  }
+}
+
 .circle-button1 a{
   text-decoration: none;
   color: var(--black);
@@ -448,6 +484,18 @@ body {
   .card.small .card-content p {
     padding: 5px;
   }
+
+  .card:nth-child(4n + 1) {
+    --top: 150;
+  }
+  
+  .card:nth-child(4n + 2) {
+    --top: 210;
+  }
+  
+  .card:nth-child(4n + 3) {
+    --top: 270;
+  }
 }
 
 /* New styles for focus-area */
@@ -573,7 +621,7 @@ body {
 }
 
 .services {
-  width: 80%;
+  width: 90%;
   margin: 20px auto;
   background-color: var(--white);
   border-radius: 15px;
@@ -584,15 +632,16 @@ body {
 .services h1 {
   text-align: center;
   color: black;
-  font-size: 2.5em;
-  margin-bottom: 40px;
+  font-size: 2em; /* Adjusted for better responsiveness */
+  margin-bottom: 30px;
   font-weight: 300;
 }
 
 .service-card {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
-  padding: 30px 0;
+  padding: 20px 0;
   border-bottom: 1px solid #ddd;
 }
 
@@ -600,62 +649,76 @@ body {
   border-bottom: none;
 }
 
-.service-number {
-  flex: 0 0 50px;
-  font-size: 1.5em;
-  color: var(--antracit);
-  text-align: right;
-  margin-right: 20px;
-}
-
-.service-card img{
-  max-width: 60px;
-  max-height: 60px;
+.service-card img {
+  max-width: 50px; /* Smaller image size */
+  max-height: 50px; /* Smaller image size */
+  margin-bottom: 10px; /* Space between image and title */
 }
 
 .service-title {
-  flex: 0 0 250px;
+  flex: 0 0 auto;
   color: var(--black);
-  text-align: center;
+  text-align: left;
+  margin-bottom: 10px; /* Space between title and description */
 }
 
 .service-title h2 {
-  font-size: 1.5em;
-  margin-bottom: 0;
+  font-size: 1.2em; /* Smaller heading size */
+  margin: 0; /* Remove margin for tighter fit */
   font-weight: 400;
 }
 
 .service-description {
   flex: 1;
-
+  padding-left: 0;
+  margin-top: 10px; /* Space between title and description */
 }
 
 .service-description p {
-  font-size: 1em;
+  font-size: 0.9em; /* Slightly smaller text for readability */
   color: var(--antracit);
   line-height: 1.5;
 }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
+  .services h1 {
+    font-size: 3.8em; /* Adjust h1 size for tablets */
+  }
+
   .service-card {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .service-number {
-    margin-bottom: 10px;
+  .service-title {
     text-align: left;
   }
 
-  .service-title {
-    margin-bottom: 10px;
-  }
-
   .service-description {
-    padding-left: 0;
+    margin-top: 10px;
   }
 }
+
+@media (max-width: 480px) {
+  .services h1 {
+    font-size: 1.5em; /* Adjust h1 size for mobile */
+  }
+
+  .service-card img {
+    max-width: 40px; /* Smaller image size for mobile */
+    max-height: 40px;
+  }
+
+  .service-title h2 {
+    font-size: 1em; /* Smaller heading size for mobile */
+  }
+
+  .service-description p {
+    font-size: 0.85em; /* Slightly smaller text for readability on mobile */
+  }
+}
+
 
 .projects-section {
   margin: 30px auto;
@@ -747,6 +810,12 @@ body {
 
   .project-column {
     margin: 20px 0;
+  }
+
+  .projects-section h1{
+
+    font-size: 1.8em;
+
   }
 }
 
