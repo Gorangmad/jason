@@ -147,10 +147,26 @@ body {
   position: relative;
   height: 100vh;
   background-image: url('../iamges/home.png');
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+  .home {
+    background-size: contain; /* Ensures the entire image is visible, with possible empty space */
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    background-size: cover; /* Can also use contain depending on design preference */
+  }
 }
 
 .home p {
@@ -295,8 +311,8 @@ body {
   color: var(--primary-button-text);
   border-radius: 50%;
   text-align: center;
-  line-height: 38px;
-  font-size: 0.8em; /* Reduced the font size */
+  line-height: 20px;
+  font-size: 0.9em; /* Reduced the font size */
   font-weight: bold;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -307,7 +323,10 @@ body {
 .circle-button1 a {
   text-decoration: none;
   color: var(--black);
+  display: inline-block; /* Ensures the margin is applied properly */
+  margin-top: 10px; /* Add margin around the text */
 }
+
 
 .circle-button1:hover {
   background-color: var(--primary-button-bg);
@@ -413,7 +432,7 @@ body {
 }
 
 .card:nth-child(4n + 1) {
-  --top: 50;
+  --top: 70;
 }
 
 .card:nth-child(4n + 2) {
