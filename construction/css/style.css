@@ -337,7 +337,7 @@ body {
   .circle-button1 {
     width: 60px; /* Further reduce size for smaller screens */
     height: 60px;
-    line-height: 18px;
+    line-height: 10px;
     font-size: 0.7em; /* Adjust font size */
   }
 }
@@ -1508,7 +1508,6 @@ label[for="privacy-check"] {
 
 /* Styles for Impressum Section */
 .Impressum {
-
   background-color: #fff;
   padding: 20px;
   margin: 200px auto;
@@ -1552,6 +1551,7 @@ label[for="privacy-check"] {
   .Impressum {
     padding: 15px;
     margin: 15px;
+    margin-top: 200px;
   }
 
   .Impressum h1 {
@@ -1626,6 +1626,7 @@ label[for="privacy-check"] {
 @media (max-width: 768px) {
   .datenschutz {
       padding: 15px;
+      margin-top: 20px;
   }
 
   .datenschutz h1 {
@@ -1648,6 +1649,7 @@ label[for="privacy-check"] {
 @media (max-width: 480px) {
   .datenschutz {
       padding: 10px;
+      margin-top: 20px;
   }
 
   .datenschutz h1 {
