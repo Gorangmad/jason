@@ -1,7 +1,7 @@
 /* Color Variables */
 :root {
   --antracit: #2f2f2f;
-  --black: #0f111d;
+  --black: #2f2f2f;
   --white: #ffffff;
   --yellow: #ffd700;
   --background: #ffffff;
@@ -37,6 +37,7 @@ body {
   width: 100%;
   top: 0;
   z-index: 1000;
+  height: 80px; /* Set a fixed height for the header */
 }
 
 .navbar a:hover {
@@ -54,8 +55,7 @@ body {
 }
 
 .header img {
-  max-width: 260px;
-  max-height: 50px;
+  max-width: 135px; /* Increase the max-width as needed */
 }
 
 .navbar a {
@@ -969,7 +969,7 @@ body {
 }
 
 .footer {
-  background-color: var(--primary-button-bg); /* Yellow */
+  background-color: var(--antracit); /* Yellow */
   padding: 50px 0;
   border-radius: 20px;
   color: var(--secondary-button-text);
@@ -998,7 +998,7 @@ body {
 }
 
 .footer-logo img {
-  width: 50px;
+  width: 300px;
   margin-right: 10px;
 }
 
@@ -1029,6 +1029,13 @@ body {
 .footer-links li {
   margin-bottom: 10px;
   font-size: 1em;
+}
+
+.footer-links a{
+  margin-bottom: 10px;
+  font-size: 1em;
+  text-decoration: none;
+  color: white;
 }
 
 .footer-links li:hover {
@@ -1497,4 +1504,169 @@ label[for="privacy-check"] {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+}
+
+/* Styles for Impressum Section */
+.Impressum {
+
+  background-color: #fff;
+  padding: 20px;
+  margin: 200px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+
+.Impressum h1 {
+  font-size: 2.5em;
+  margin-top: 0;
+  text-align: center;
+  color: var(--primary-color); /* Use your primary color */
+}
+
+.Impressum h2 {
+  font-size: 1.75em;
+  margin-top: 20px;
+  border-bottom: 2px solid var(--primary-color); /* Adds a visual separator */
+  padding-bottom: 5px;
+}
+
+.Impressum p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.Impressum a {
+  color: var(--primary-color); /* Use your primary color */
+  text-decoration: none;
+}
+
+.Impressum a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .Impressum {
+    padding: 15px;
+    margin: 15px;
+  }
+
+  .Impressum h1 {
+    font-size: 2em;
+  }
+
+  .Impressum h2 {
+    font-size: 1.5em;
+  }
+  
+  .Impressum p {
+    font-size: 0.9em;
+  }
+}
+
+
+/* General styles for the Datenschutz section */
+.datenschutz {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.datenschutz h1,
+.datenschutz h2,
+.datenschutz h3,
+.datenschutz h4 {
+  color: #003366; /* Dark blue color for headings */
+}
+
+.datenschutz h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.datenschutz h2 {
+  font-size: 1.5em;
+  margin: 20px 0 10px;
+}
+
+.datenschutz h3 {
+  font-size: 1.2em;
+  margin: 15px 0 5px;
+}
+
+.datenschutz h4 {
+  font-size: 1em;
+  margin: 10px 0 5px;
+}
+
+.datenschutz p {
+  margin: 10px 0;
+  text-align: justify;
+}
+
+.datenschutz ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.datenschutz a {
+  color: #0066cc; /* Blue color for links */
+  text-decoration: none;
+}
+
+.datenschutz a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .datenschutz {
+      padding: 15px;
+  }
+
+  .datenschutz h1 {
+      font-size: 1.8em;
+  }
+
+  .datenschutz h2 {
+      font-size: 1.4em;
+  }
+
+  .datenschutz h3 {
+      font-size: 1.1em;
+  }
+
+  .datenschutz h4 {
+      font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .datenschutz {
+      padding: 10px;
+  }
+
+  .datenschutz h1 {
+      font-size: 1.6em;
+  }
+
+  .datenschutz h2 {
+      font-size: 1.2em;
+  }
+
+  .datenschutz h3 {
+      font-size: 1em;
+  }
+
+  .datenschutz h4 {
+      font-size: 0.8em;
+  }
+
+  .datenschutz p {
+      font-size: 0.9em;
+  }
 }

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Responsive Construction Website Design Tutorial</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header fade-in">
+    <img src="./iamges/logo.png" alt="">
+    <nav class="navbar fade-in" id="navbar">
+      <a href="index.html">Home</a>
+      <a href="#stack">Services</a>
+      <a href="#projects-section">Projekte</a>
+      <a href="return.html" class="quote-button">Konfigurator</a>
+      <a href="01797585329" class="call-now">Jetzt Anrufen 01797585329</a>
+    </nav>
+    <div class="hamburger fade-in" id="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </header>
+  
+<section class="Impressum">
+    <h1>Impressum</h1>
+
+    <p>JG Haustechnik<br />
+    Teichweg 4B<br />
+    63452 Hanau</p>
+    
+    <p><strong>Vertreten durch:</strong><br />
+    Jonathan Gebrab</p>
+    
+    <h2>Kontakt</h2>
+    <p>Telefon: +49 17643230912<br />
+    E-Mail: info@gebrab.de</p>
+    
+    <h2>Aufsichtsbeh&ouml;rde</h2>
+    <p>Amtsgericht Hanau<br />
+    Nu&szlig;allee 17, 63450 Hanau</p>
+    <p><a href="https://ordentliche-gerichtsbarkeit.hessen.de/landgerichtsbezirk-hanau/amtsgericht-hanau" target="_blank" rel="noopener noreferrer">https://ordentliche-gerichtsbarkeit.hessen.de/landgerichtsbezirk-hanau/amtsgericht-hanau</a></p>
+    
+    <h2>EU-Streitschlichtung</h2>
+    <p>Die Europ&auml;ische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a>.<br /> Unsere E-Mail-Adresse finden Sie oben im Impressum.</p>
+    
+    <h2>Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle</h2>
+    <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+  
+</section>
+ 
+  <footer class="footer fade-in">
+   <div class="footer-content">
+     <div class="footer-left">
+       <div class="footer-logo">
+         <img src="iamges/logo.png" alt="JG Haustechnik Logo">
+       </div>
+     </div>
+     <div class="footer-center">
+       <div class="footer-links">
+         <ul>
+           <li><b>Sektionen</b></li>
+           <li>Home</li>
+           <li>Services</li>
+           <li>Projekte</li>
+           <li>Konfigurator</li>
+           <li>Anrufen unter: 01797585329</li>
+         </ul>
+       </div>
+       <div class="footer-links">
+         <ul>
+          <li><b>Rechtlich</b></li>
+           <li><a href="/datenschutz.html">Datenschutz & Conditions</a></li>
+           <li><a href="/impressum.html">Impressum</a></li>
+         </ul>
+       </div>
+       <div class="footer-links">
+         <ul>
+           <li><b>Social Media</b></li>
+           <li>Instagram</li>
+           <li>Tiktok</li>
+           <li>Facebook</li>
+         </ul>
+       </div>
+     </div>
+   </div>
+ </footer>
+ 
+
+  <script>
+   document.addEventListener('DOMContentLoaded', function () {
+  const fadeElements = document.querySelectorAll('.fade-in');
+  const hamburger = document.getElementById('hamburger');
+  const navbar = document.getElementById('navbar');
+  const header = document.querySelector('.header');
+
+  const handleScroll = () => {
+    fadeElements.forEach(element => {
+      const rect = element.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom >= 0) {
+        element.classList.add('visible');
+      }
+    });
+  };
+
+  window.addEventListener('scroll', handleScroll);
+  handleScroll(); // Run on load to fade in elements already in view
+
+  hamburger.addEventListener('click', () => {
+    header.classList.toggle('open');
+    navbar.classList.toggle('open');
+  });
+
+  // Optional: Close the navbar when a link is clicked
+  navbar.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      header.classList.remove('open');
+      navbar.classList.remove('open');
+    });
+  });
+});
+
+  </script>
+
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
