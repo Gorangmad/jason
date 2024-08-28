@@ -31,7 +31,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: var(--white);
+  background-color: var(--antracit);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
@@ -52,6 +52,7 @@ body {
 .navbar {
   display: flex;
   gap: 20px;
+  background-color: var(--antracit);
 }
 
 .header img {
@@ -59,7 +60,7 @@ body {
 }
 
 .navbar a {
-  color: var(--antracit); /* Use color variable */
+  color: var(--white); /* Use color variable */
   text-decoration: none;
   padding: 10px 15px;
   font-weight: bold;
@@ -89,7 +90,7 @@ body {
 .hamburger .bar {
   height: 3px;
   width: 30px;
-  background-color: var(--antracit);
+  background-color: var(--white);
   margin: 2px; /* Increase margin to give more space between bars */
   transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
 }
@@ -210,6 +211,10 @@ body {
   margin-top: 20px;
 }
 
+.home .text2 {
+  font-size: 2em;
+}
+
 @media (max-width: 1200px) {
   .large-text, .large-text2 {
     font-size: 6em;
@@ -242,7 +247,7 @@ body {
   }
 
   .large-text, .large-text2 {
-    font-size: 4em;
+    font-size: 40em;
   }
 
   .and {
@@ -252,11 +257,15 @@ body {
   .content p {
     font-size: 1em;
   }
+
+  .home .text2 {
+    font-size: 2em;
+  }
 }
 
 @media (max-width: 480px) {
   .large-text, .large-text2 {
-    font-size: 3em;
+    font-size: 15em;
   }
 
   .and {
@@ -264,7 +273,11 @@ body {
   }
 
   .content p {
-    font-size: 0.8em;
+    font-size: 2em;
+  }
+
+  .home .text2 {
+    font-size: 1.3em;
   }
 }
 
