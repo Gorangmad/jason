@@ -27,40 +27,71 @@
     </div>
   </header>
 
-    <section class="projects fade-in">
-        <div class="header-content fade-in">
-            <div class="text-container">
-                <h1>Unsere Expertise</h1>
-                <div class="text-content">
-                    <p>Wir bringen unseren innovativen Ansatz in jedes Projekt ein und beweisen, dass nichts unmöglich ist. Nutzen Sie diesen Raum, um das Unternehmen, seine Produkte oder Dienstleistungen zu bewerben. Helfen Sie den Menschen, sich mit dem Unternehmen und seinen Angeboten vertraut zu machen und so eine Verbindung und Vertrauen aufzubauen. Konzentrieren Sie sich darauf, was das Unternehmen einzigartig macht und wie Nutzer davon profitieren können.</p>
-                </div>
+      <section class="renovierung-section">
+        <div class="renovierung-project">
+            <!-- Visible Image for Project 1 -->
+            <a href="iamges/1.jpg" data-gallery="renovierung-gallery">
+                <img src="iamges/1.jpg" alt="Silverstone Community Center">
+            </a>
+            <div class="renovierung-project-info">
+                <h2>Projekt 1</h2>
+                <p>Share information on a previous project here to attract new clients. Provide a brief summary to help visitors understand the context and background of the work.</p>
             </div>
+    
+            <!-- Hidden Image for Project 1 -->
+            <a href="iamges/3.jpg" data-gallery="renovierung-gallery" style="display:none;"></a>
         </div>
-        
-        <div class="project-cards-container">
-            <div class="project-card">
-                <img src="iamges/Bad.jpg" alt="Badsanierung">
-                <div class="project-info">
-                    <span class="project-number">01</span>
-                    <h3>Badsanierung</h3>
-                </div>
+    
+        <div class="renovierung-project">
+            <!-- Visible Image for Project 2 -->
+            <a href="iamges/10.jpg" data-gallery="renovierung-gallery">
+                <img src="iamges/10.jpg" alt="234 Kingsway Road">
+            </a>
+            <div class="renovierung-project-info">
+                <h2>Projekt 2</h2>
+                <p>Share information on a previous project here to attract new clients. Provide a brief summary to help visitors understand the context and background of the work.</p>
             </div>
-            <div class="project-card">
-                <img src="images/sanitaer.jpg" alt="Sanitärarbeiten">
-                <div class="project-info">
-                    <span class="project-number">02</span>
-                    <h3>Sanitärarbeiten</h3>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="images/sanierung.jpg" alt="Zimmersanierung">
-                <div class="project-info">
-                    <span class="project-number">03</span>
-                    <h3>Zimmersanierung</h3>
-                </div>
-            </div>
+    
+            <!-- Hidden Image for Project 2 -->
+            <a href="iamges/9.jpg" data-gallery="renovierung-gallery" style="display:none;"></a>
         </div>
+    
+        <div class="renovierung-project">
+            <!-- Visible Image for Project 3 -->
+            <a href="iamges/17.jpg" data-gallery="renovierung-gallery">
+                <img src="iamges/17.jpg" alt="Project Name">
+            </a>
+            <div class="renovierung-project-info">
+                <h2>Projekt 3</h2>
+                <p>Share information on a previous project here to attract new clients. Provide a brief summary to help visitors understand the context and background of the work.</p>
+            </div>
+    
+            <!-- Hidden Image for Project 3 -->
+            <a href="iamges/16.jpg" data-gallery="renovierung-gallery" style="display:none;"></a>
+            <a href="iamges/18.jpg" data-gallery="renovierung-gallery" style="display:none;"></a>
+            <a href="iamges/19.jpg" data-gallery="renovierung-gallery" style="display:none;"></a>
+
+        </div>
+
+        <div class="renovierung-project">
+          <!-- Visible Image for Project 3 -->
+          <a href="iamges/21.jpg" data-gallery="renovierung-gallery">
+              <img src="iamges/21.jpg" alt="Project Name">
+          </a>
+          <div class="renovierung-project-info">
+              <h2>Projekt 4</h2>
+              <p>Share information on a previous project here to attract new clients. Provide a brief summary to help visitors understand the context and background of the work.</p>
+          </div>
+  
+          <!-- Hidden Image for Project 3 -->
+          <a href="iamges/22.jpg" data-gallery="renovierung-gallery" style="display:none;"></a>
+          <a href="iamges/23.jpg" data-gallery="renovierung-gallery" style="display:none;"></a>
+
+      </div>
     </section>
+    
+    
+    
     
     
 
@@ -132,8 +163,22 @@
             handleScroll(); // Run on load to fade in elements already in view
         });
     </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      lightGallery(document.querySelector('.renovierung-section'), {
+          selector: '[data-gallery="renovierung-gallery"]',
+          mode: 'lg-fade',
+          download: false,
+      });
+  });
+</script>
+
+
     
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
 </body>
 </html>

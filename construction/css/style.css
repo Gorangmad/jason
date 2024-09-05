@@ -1685,3 +1685,204 @@ label[for="privacy-check"] {
       font-size: 0.9em;
   }
 }
+
+.renovierung-project {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--primary-button-bg);
+  padding-bottom: 20px;
+  
+}
+
+
+.renovierung-project-info {
+  padding-left: 20px;
+  flex-grow: 1; /* Ensure the project info takes up the remaining space */
+}
+
+.renovierung-project-info h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.renovierung-project-info p {
+  margin: 5px 0 0 0;
+  color: #ffffff;
+}
+
+.renovierung-learn-more a {
+  display: inline-block;
+  border: 2px solid #555;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+}
+
+.renovierung-section {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: var(--antracit);
+  max-width: 80%;
+  margin: 0 auto; /* Centers the section horizontally */
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+.renovierung-section a {
+  display: inline-block;
+}
+
+.renovierung-section img {
+  width: 80%;
+  height: 50%;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.circle-button2 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 70px; /* Reduced the size */
+  height: 70px; /* Reduced the size */
+  background-color: var(--white);
+  color: var(--primary-button-text);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  font-size: 0.9em; /* Reduced the font size */
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 1; /* Ensure button is above content */
+}
+
+.circle-button2 a {
+  text-decoration: none;
+  color: var(--black);
+  display: inline-block; /* Ensures the margin is applied properly */
+  margin-top: 10px; /* Add margin around the text */
+}
+
+
+.circle-button2:hover {
+  background-color: var(--primary-button-bg);
+  opacity: 0.8;
+}
+
+@media (max-width: 1024px) {
+  .circle-button2 {
+    width: 60px; /* Further reduce size for smaller screens */
+    height: 60px;
+    line-height: 10px;
+    font-size: 0.7em; /* Adjust font size */
+  }
+}
+
+@media (max-width: 768px) {
+  .circle-button2 {
+    width: 50px; /* Further reduce size for smaller screens */
+    height: 50px;
+    font-size: 0.6em; /* Adjust font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .circle-button2 {
+    width: 40px; /* Further reduce size for the smallest screens */
+    height: 40px;
+    font-size: 0.4em; /* Adjust font size */
+  }
+}
+
+.circle-button2 a{
+  text-decoration: none;
+  color: var(--black);
+}
+
+.circle-button2:hover {
+  background-color: var(--primary-button-bg);
+  color: white;
+  opacity: 0.8;
+}
+
+.circle-button2:hover a{
+  color: var(--secondary-button-text);
+  opacity: 0.8;
+}
+
+/* General styling for the About Us section */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.about-image {
+  flex: 1;
+  margin-right: 30px;
+  position: relative;
+  max-width: 720px; /* Adjust width as needed */
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px; /* Rounded corners for the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+
+.about-text {
+  flex: 1;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--yellow); /* Accent color for the heading */
+}
+
+.about-text p {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.about-text p:first-of-type {
+  margin-top: 0;
+}
+
+.about-text p:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .about {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .about-image {
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+
+  .about-text h2 {
+      font-size: 2rem;
+  }
+
+  .about-text p {
+      font-size: 1rem;
+  }
+}
+
