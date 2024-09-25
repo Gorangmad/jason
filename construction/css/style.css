@@ -40,6 +40,8 @@ body {
   height: 80px; /* Set a fixed height for the header */
 }
 
+
+
 .navbar a:hover {
   background-color: var(--yellow); /* Change background to yellow */
   color: var(--black); /* Change text color to black for contrast */
@@ -54,6 +56,7 @@ body {
   gap: 20px;
   background-color: var(--antracit);
 }
+
 
 .header img {
   max-width: 135px; /* Increase the max-width as needed */
@@ -144,31 +147,41 @@ body {
 }
 
 
+/* Base styles for the home class */
 .home {
-  position: relative;
-  height: 100vh;
   background-image: url('../iamges/home.png');
-  background-size: cover; /* Ensures the image covers the entire container */
-  background-position: center center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center; /* Centers the image */
+  background-size: contain; /* Scales the image while maintaining its aspect ratio */
+  width: 100%;  /* Make sure it takes the full width */
+  min-height: 110vh; /* Ensures at least the full viewport height */
+  display: flex; /* Helps with height scaling for the container */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
 }
 
-/* Media Queries for smaller screens */
+/* Media Queries for tablets and smaller screens */
 @media (max-width: 768px) {
   .home {
-    background-size: contain; /* Ensures the entire image is visible, with possible empty space */
+    background-image: url('../iamges/mobile.png');
+    min-height: 100vh;
+    background-size: contain;
+
   }
 }
 
+/* Media Queries for phones and extra small screens */
 @media (max-width: 480px) {
   .home {
-    background-size: cover; /* Can also use contain depending on design preference */
+    background-image: url('../iamges/mobile.png');
+    background-size: contain;
   }
 }
+
+
+
+
+
 
 .home p {
   color: var(--white);
