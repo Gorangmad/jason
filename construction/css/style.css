@@ -128,6 +128,8 @@ body {
     display: flex;
   }
 
+
+
   .header.open .navbar {
     right: 0; /* Slide the navbar in from the left */
     display: flex;
@@ -175,6 +177,12 @@ body {
   .home {
     background-image: url('../iamges/mobile.png');
     background-size: contain;
+  }
+
+  .header img {
+    max-width: 135px;
+    position: relative;
+    margin-top: 17px; /* This ensures the image is vertically centered */
   }
 }
 
