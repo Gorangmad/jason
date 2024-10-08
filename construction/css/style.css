@@ -1709,61 +1709,54 @@ label[for="privacy-check"] {
   }
 }
 
-.renovierung-project {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  border-bottom: 1px solid var(--primary-button-bg);
-  padding-bottom: 20px;
-  
-}
-
-
-.renovierung-project-info {
-  padding-left: 20px;
-  flex-grow: 1; /* Ensure the project info takes up the remaining space */
-}
-
-.renovierung-project-info h2 {
-  margin: 0;
-  font-size: 1.5rem;
-  color: #ffffff;
-}
-
-.renovierung-project-info p {
-  margin: 5px 0 0 0;
-  color: #ffffff;
-}
-
-.renovierung-learn-more a {
-  display: inline-block;
-  border: 2px solid #555;
-  border-radius: 50%;
-  text-decoration: none;
-  color: #555;
-  font-weight: bold;
-}
-
-.renovierung-section {
-  border-radius: 10px;
+.renovierung-gallery {
+  max-width: 90%;
+  margin: 100px auto;
   padding: 20px;
   background-color: var(--antracit);
-  max-width: 80%;
-  margin: 0 auto; /* Centers the section horizontally */
-  margin-top: 150px;
-  margin-bottom: 50px;
-}
-
-.renovierung-section a {
-  display: inline-block;
-}
-
-.renovierung-section img {
-  width: 80%;
-  height: 50%;
-  cursor: pointer;
   border-radius: 10px;
 }
+
+.renovierung-gallery h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.gallery-item h3 {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.gallery-item p {
+  text-align: center;
+  color: #ffffff;
+}
+
+
+
+
 
 .circle-button2 {
   position: absolute;

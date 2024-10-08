@@ -18,7 +18,6 @@
       <a href="#stack">Services</a>
       <a href="projects.html">Projekte</a>
       <a href="return.html" class="quote-button">Konfigurator</a>
-      <a href="01797585329" class="call-now">Jetzt Anrufen 01797585329</a>
     </nav>
     <div class="hamburger fade-in" id="hamburger">
       <span class="bar"></span>
@@ -38,10 +37,10 @@
             </div>
             <div class="questions question-step" id="step2" data-step="2">
                <h1>Welcher Bereich soll bearbeitet werden?</h1>
-               <button class="option-card" data-next="step3">Bad</button>
-               <button class="option-card" data-next="step3">Zimmer</button>
-               <button class="option-card" data-next="step3">Balkon</button>
-               <button class="option-card" data-next="step3">Etwas anderes</button>
+               <button class="option-card" data-next="step3" data-type="Bad">Bad</button>
+               <button class="option-card" data-next="step3" data-type="Zimmer">Zimmer</button>
+               <button class="option-card" data-next="step3" data-type="Balkon">Balkon</button>
+               <button class="option-card" data-next="step3" data-type="Anderes">Etwas anderes</button>
             </div>
             <div class="questions question-step" id="final-step" data-step="4">
             </div>
@@ -54,41 +53,48 @@
      
          <div class="contact-info" id="contact-info">
           <h2>Weitere Informationen</h2>
-          <form id="contact-form">
-              <div class="form-group">
-                  <input type="text" name="first_name" placeholder="First name *" required>
-                  <input type="text" name="last_name" placeholder="Last name *" required>
-              </div>
-              <div class="form-group">
-                  <input type="email" name="email" placeholder="Email *" required>
-                  <input type="tel" name="phone" placeholder="Phone">
-              </div>
-              <div class="form-group">
-                  <input type="text" name="address" placeholder="Adresse *" required>
-              </div>
-              <div class="form-group">
-                  <input type="text" name="performance_location" placeholder="Leistungsort (falls abweichend)">
-              </div>
-              <div class="form-group">
-                <input type="number" name="Budget" placeholder="Budget">
+          <form id="contact-form" action="http://localhost:5000/send" method="POST" enctype="multipart/form-data">
+          
+            <!-- Rest of the form fields -->
+            <div class="form-group">
+              <input type="text" name="first_name" placeholder="First name *" required>
+              <input type="text" name="last_name" placeholder="Last name *" required>
             </div>
-              <div class="form-group">
-                  <textarea name="message" placeholder="Message"></textarea>
-              </div>
-              <div class="form-group">
-                  <label for="image-upload">Upload Images:</label>
-                  <input type="file" name="images" id="image-upload" accept="image/*" multiple>
-              </div>
-              <div class="form-group">
-                  <label for="video-upload">Upload Videos:</label>
-                  <input type="file" name="videos" id="video-upload" accept="video/*" multiple>
-              </div>
-              <div class="form-group">
-                  <input type="checkbox" id="privacy-check" required>
-                  <label for="privacy-check">Ich stimme der Datenschutzbestimmung zu</label>
-              </div>
-              <button type="submit" disabled id="submit-button">Submit</button>
+            
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Email *" required>
+              <input type="tel" name="phone" placeholder="Phone">
+            </div>
+          
+            <div class="form-group">
+              <input type="text" name="address" placeholder="Adresse *" required>
+            </div>
+          
+            <div class="form-group">
+              <input type="text" name="performance_location" placeholder="Leistungsort (falls abweichend)">
+            </div>
+          
+            <div class="form-group">
+              <input type="number" name="Budget" placeholder="Budget">
+            </div>
+          
+            <div class="form-group">
+              <textarea name="message" placeholder="Message"></textarea>
+            </div>
+          
+            <div class="form-group">
+              <label for="file-upload">Bilder hochladen:</label>
+              <input type="file" name="files" id="file-upload" accept="image/*, video/*" multiple>
+            </div>
+          
+            <div class="form-group">
+              <input type="checkbox" id="privacy-check" required>
+              <label for="privacy-check">Ich stimme der Datenschutzbestimmung zu</label>
+            </div>
+          
+            <button type="submit" disabled id="submit-button">Submit</button>
           </form>
+          
       
           <button class="back-button" id="back-button-form" style="display: none;">Back</button>
       
@@ -97,12 +103,6 @@
               <p>Wir werden uns umgehend mit Ihnen in Verbindung setzen.</p>
           </div>
       </div>
-      
-
-          <div id="thank-you-message" style="display: none; text-align: center; margin-top: 20px; color: black;">
-            <h2>Vielen Dank für Ihr Interesse.</h2>
-            <p>Wir werden uns umgehend mit Ihnen in Verbindung setzen.</p>
-          </div>
       </div>
       
    
@@ -119,42 +119,39 @@
         <div class="footer-logo">
           <img src="iamges/logo.png" alt="JG Haustechnik Logo">
         </div>
-        <div class="footer-company">
-          <p><b>JG Haustechnik</b></p>
-        </div>
       </div>
       <div class="footer-center">
         <div class="footer-links">
           <ul>
             <li><b>Sektionen</b></li>
-            <li>Home</li>
-            <li>Services</li>
-            <li>Projekte</li>
-            <li>Konfigurator</li>
-            <li>Anrufen unter: 01797585329</li>
+            <li><a href="index.html"></a>Home</li>
+            <li><a href="expertise.html"></a>Services</li>
+            <li><a href="projects.html"></a>Projekte</li>
+            <li><a href="return.html"></a>Konfigurator</li>
           </ul>
         </div>
         <div class="footer-links">
           <ul>
            <li><b>Rechtlich</b></li>
-            <li>Datenschutz & Conditions</li>
-            <li>Impressum</li>
+            <li><a href="datenschutz.html">Datenschutz & Conditions</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
           </ul>
         </div>
         <div class="footer-links">
           <ul>
             <li><b>Social Media</b></li>
-            <li>Instagram</li>
-            <li>Tiktok</li>
-            <li>Facebook</li>
+            <li><a href="https://www.tiktok.com/@jghaustechnik">Tiktok</a></li>
+            <li><a href="https://www.instagram.com/jg_haustechnik/"></a>Instagram</li>
           </ul>
         </div>
       </div>
     </div>
   </footer>
+  
  
 
   <script>
+let work_type = [];  // Array to store selected options
 
 document.addEventListener('DOMContentLoaded', function () {
     const fadeElements = document.querySelectorAll('.fade-in');
@@ -170,27 +167,27 @@ document.addEventListener('DOMContentLoaded', function () {
     let currentStep = 0;
 
     const showStep = (index) => {
-    steps.forEach((step, i) => {
-        step.classList.toggle('active', i === index);
-    });
+        steps.forEach((step, i) => {
+            step.classList.toggle('active', i === index);
+        });
     
-    // Hide the "Back" button in the contact information step
-    if (steps[index].id === 'final-step') {
-        backButton.style.display = 'none';
-    } else {
-        backButton.style.display = index === 0 ? 'none' : 'inline-block';
-    }
+        // Hide the "Back" button in the contact information step
+        if (steps[index].id === 'final-step') {
+            backButton.style.display = 'none';
+        } else {
+            backButton.style.display = index === 0 ? 'none' : 'inline-block';
+        }
     
-    nextButton.style.display = index === steps.length - 1 ? 'none' : 'inline-block';
-    submitButton.style.display = index === steps.length - 1 ? 'inline-block' : 'none';
+        nextButton.style.display = index === steps.length - 1 ? 'none' : 'inline-block';
+        submitButton.style.display = index === steps.length - 1 ? 'inline-block' : 'none';
     
-    // Show contact section when all questions are answered
-    if (index === steps.length - 1) {
-        contactInfo.classList.add('active');
-    } else {
-        contactInfo.classList.remove('active');
-    }
-};
+        // Show contact section when all questions are answered
+        if (index === steps.length - 1) {
+            contactInfo.classList.add('active');
+        } else {
+            contactInfo.classList.remove('active');
+        }
+    };
 
     const handleNext = () => {
         if (currentStep < steps.length - 1) {
@@ -206,14 +203,11 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     };
 
-
-
-
     const handleSelection = (event) => {
         const selectedCard = event.target;
+        const currentStepCards = steps[currentStep].querySelectorAll('.option-card');
 
         // Remove 'selected' class from all option cards in the current step
-        const currentStepCards = steps[currentStep].querySelectorAll('.option-card');
         currentStepCards.forEach(card => {
             card.classList.remove('selected');
         });
@@ -221,37 +215,45 @@ document.addEventListener('DOMContentLoaded', function () {
         // Add 'selected' class to the clicked option card
         selectedCard.classList.add('selected');
         nextButton.disabled = false; // Enable the "Next" button
+
+        // Save the selected option to the array
+        const selectedType = selectedCard.getAttribute('data-type');
+        if (currentStep === 0) {
+            work_type[0] = selectedType;  // Store the work type (step 1)
+        } else if (currentStep === 1) {
+            work_type[1] = selectedType;  // Store the area (step 2)
+        }
     };
 
     const navbar = document.getElementById('navbar');
-  const header = document.querySelector('.header');
+    const header = document.querySelector('.header');
 
-  const handleScroll = () => {
-    fadeElements.forEach(element => {
-      const rect = element.getBoundingClientRect();
-      if (rect.top < window.innerHeight && rect.bottom >= 0) {
-        element.classList.add('visible');
-      }
+    const handleScroll = () => {
+        fadeElements.forEach(element => {
+            const rect = element.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                element.classList.add('visible');
+            }
+        });
+    };
+
+    hamburger.addEventListener('click', () => {
+        header.classList.toggle('open');
+        navbar.classList.toggle('open');
     });
-  };
 
-  hamburger.addEventListener('click', () => {
-    header.classList.toggle('open');
-    navbar.classList.toggle('open');
-  });
-
-  // Optional: Close the navbar when a link is clicked
-  navbar.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      header.classList.remove('open');
-      navbar.classList.remove('open');
+    // Optional: Close the navbar when a link is clicked
+    navbar.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            header.classList.remove('open');
+            navbar.classList.remove('open');
+        });
     });
-  });
 
     const handleFormSubmit = (event) => {
-        event.preventDefault(); // Prevent the form from actually submitting
-        contactForm.style.display = 'none'; // Hide the form
-        thankYouMessage.style.display = 'block'; // Show the thank-you message
+        event.preventDefault();  // Prevent the form from actually submitting
+        contactForm.style.display = 'none';  // Hide the form
+        thankYouMessage.style.display = 'block';  // Show the thank-you message
     };
 
     optionCards.forEach(card => {
@@ -268,9 +270,40 @@ document.addEventListener('DOMContentLoaded', function () {
     contactForm.addEventListener('submit', handleFormSubmit);
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Run on load to fade in elements already in view
+    handleScroll();  // Run on load to fade in elements already in view
 
     showStep(currentStep);
+});
+
+const form = document.getElementById('contact-form');
+const thankYouMessage = document.getElementById('thank-you-message');
+
+// Handle form submission and include the selected work type and area
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+
+    // Add the selected work_type array values to formData
+    formData.append('work_type', work_type[0] || '');
+    formData.append('work_area', work_type[1] || '');
+
+    fetch('http://localhost:5000/send', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.status === 'success') {
+            form.style.display = 'none';
+            thankYouMessage.style.display = 'block';
+        } else {
+            alert('Failed to send the form. Please try again.');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
 });
 
 
