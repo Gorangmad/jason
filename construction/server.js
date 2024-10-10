@@ -13,6 +13,28 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
 
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+// Another page route
+app.get('/Projekte', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', '/projects.html'));
+});
+
+app.get('/Expertise', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', '/expertise.html'));
+});
+app.get('/Return', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', '/return.html'));
+});
+app.get('/Datenschutz', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', '/datenschutz.html'));
+});
+app.get('/Impressum', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', '/impressum.html'));
+});
+
 // Multer configuration with file size limit (5 MB in this case)
 const upload = multer({
   dest: 'uploads/',
