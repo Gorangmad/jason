@@ -1,0 +1,128 @@
+.testimonials {
+    padding: 6rem 2rem;
+    background: linear-gradient(145deg, var(--antracit), var(--background));
+    text-align: center;
+    color: var(--white);
+}
+
+.testimonials h3 {
+    color: var(--yellow);
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.testimonials h1 {
+    color: var(--white);
+    font-size: 2.5em;
+    margin-bottom: 3rem;
+    position: relative;
+    display: inline-block;
+}
+
+.testimonials h1::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: var(--yellow);
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.testimonial-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section.testimonials .testimonial-cards .card {
+    background: rgba(51, 51, 51, 0.8);
+    border-radius: 15px;
+    padding: 3rem;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 184, 0, 0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: 0;
+    transform: none;
+}
+
+section.testimonials .testimonial-cards .card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    border-color: var(--yellow);
+}
+
+section.testimonials .testimonial-cards .card p {
+    color: var(--white) !important;
+    line-height: 1.6;
+    font-size: 1.1em;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    padding: 0;
+    position: relative;
+}
+
+section.testimonials .testimonial-cards .card .client-name {
+    color: var(--yellow) !important;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-bottom: 0.5rem;
+    font-style: normal;
+    padding: 0;
+}
+
+section.testimonials .testimonial-cards .card .stars {
+    color: var(--yellow) !important;
+    font-size: 1.5em;
+    margin: 0;
+    font-style: normal;
+    padding: 0;
+}
+
+section.testimonials .testimonial-cards .card .testimonial-footer {
+    margin-top: auto;
+    padding-top: 1.5rem;
+}
+
+@media (max-width: 992px) {
+    .testimonial-cards {
+        grid-template-columns: 1fr;
+        max-width: 800px;
+    }
+
+    .testimonial-cards .card {
+        padding: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonial-cards {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .testimonials {
+        padding: 4rem 1rem;
+    }
+
+    .testimonials h1 {
+        font-size: 2em;
+    }
+
+    .testimonial-cards .card {
+        padding: 2rem 1.5rem;
+    }
+}
